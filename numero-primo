@@ -3,6 +3,8 @@ programa {
 
   funcao verificaPrimo(){
     inteiro x, valor = 1, divisores = 0
+
+    limpa()
     escreva("Verificador de Números Primos\n\n")
     escreva ("\nDigite um valor e direi se o mesmo é um número primo ou não:\t")
     leia (x)
@@ -15,18 +17,21 @@ programa {
         valor++
         }
 
-        se (divisores == 2) 
-          escreva ("O número ", x,"\té primo!\n")
+        se (divisores == 2) {
+          limpa()
+          escreva ("O número ", x,"\té primo!\n\n")
+        }
         senao {
-          escreva ("o número ", x,"\t não é primo!\n")
-      } 
+          limpa()
+          escreva ("o número ", x,"\t não é primo!\n\n")
+        } 
     }
   }
   
   funcao inicio() {
     enquanto(reiniciar){
       verificaPrimo()
-      escreva("Deseja verificar outro número ?")
+      escreva("Deseja verificar outro número ?\n")
       escreva("Resposta:\t")
       leia(reiniciar)
     }
