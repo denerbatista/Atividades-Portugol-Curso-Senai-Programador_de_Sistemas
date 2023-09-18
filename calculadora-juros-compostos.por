@@ -22,6 +22,7 @@ programa
     }
 
     funcao calcularJurosCompostos(){
+        limpa()
         escreva("Calculadora de Juros Compostos\n")
         escreva("\nDigite o valor do Capital Inicial: R$")
         leia(capitalInicial)
